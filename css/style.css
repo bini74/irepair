@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Steinberg';
+  src: url('/other/Steinberg-Regular.woff2') format('woff2'),
+      url('/other/Steinberg-Regular.woff') format('woff'),
+      url('/other/Steinberg-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color:black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#logo{
+  height: 102%;
+}
+
+#bag{
+  height: 3vmax;
+  right: -30%;
+  position: relative;
+}
+
+#itmenu{
+    font-family: "steinberg";
+}
+
+
+body { margin: 0 auto; }
+
+header {
+	height: 70px;
+	background-color: #333333;
+	border-bottom: 1px solid #494949;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header > h1 {
+	width: calc(100% - 160px);
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+header > .top {
+	position: absolute;
+	left: 20px;
+}
+header > .top a.menu_icon i {
+	color: #000;
+  font-size: 40px;
+	padding-top: 5px;
+	transition: .2s ease;
+}
+header > .top a.menu_icon:hover i {
+	color: #fff;
+}
+nav.menu {
+	width: 300px;
+	min-height: calc(100vh - 121px);
+	background-color: #222222;
+	position: absolute;
+	left: -300px;
+  transition: .3s all;
+  font-family: "steinberg";
+}
+nav.menu > a {
+    display: block;
+    padding: 5px;
+    margin: 15px 0 0px 20px;
+    color: #ffffff;
+}
+main {
+	width: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+}
+footer {
+	height: 50px;
+	background-color: #494949;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.menu_show {
+	left: 0!important;
+}
+
+@media screen and (max-width: 425px) {
+	header h1 {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 360px) {
+	nav.menu {
+		width: 100%;
+		left: -100%; 
+	}
+}
+
+.with--sidebar .site-cache{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0,0,0,0.6)
+}

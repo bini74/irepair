@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Steinberg';
+    src: url('Steinberg-Regular.woff2') format('woff2'),
+        url('Steinberg-Regular.woff') format('woff'),
+        url('Steinberg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
